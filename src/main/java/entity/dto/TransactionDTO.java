@@ -7,7 +7,7 @@ import lombok.Getter;
 @Getter
 public class TransactionDTO {
     String transactionMessage;
-    int crFrom;
-    int crTo;
+    Long crFrom;
+    Long crTo;
     Double amount;
 }

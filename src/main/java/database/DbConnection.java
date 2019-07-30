@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 public class DbConnection {
 
     private DbConnection() {}
-    public static final Logger LOG = Logger.getAnonymousLogger();
+    private static final Logger LOG = Logger.getAnonymousLogger();
 
     private static EntityManagerFactory emf;
     public static EntityManager em;

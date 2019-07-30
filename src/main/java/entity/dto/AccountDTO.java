@@ -11,6 +11,6 @@ public class AccountDTO {
     String firstName;
     String middleName;
     String lastName;
-    int accountNo;
+    Long accountNo;
     Double balance;
 }

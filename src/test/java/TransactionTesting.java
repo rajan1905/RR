@@ -2,51 +2,98 @@ import database.DbConnection;
 import entity.dao.Account;
 import entity.dto.AccountDTO;
 import entity.dto.TransactionDTO;
-import org.junit.jupiter.api.Test;
-import transactions.utility.TransactionUtility;
+import org.junit.Before;
+import org.junit.Test;
+import repository.AccountRepository;
+import repository.AccountRepositoryImpl;
+import transactions.TransactionUtility;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TransactionTesting {
-    @Test
-    public void transferFromXToY(){
+
+    private AccountRepository repository ;
+    private Long one = new Long(1);
+    private Long two =  new Long(2);
+    private Account xA, yA;
+
+    @Before
+    public void setup(){
+        DbConnection.init();
+        repository = new AccountRepositoryImpl(DbConnection.em);
+    }
+
+
+    public void clearDB(){
+        if(xA != null) repository.deleteAccount(xA);
+        if(xA != null) repository.deleteAccount(yA);
         AccountDTO x = AccountDTO.builder()
-                .accountNo(1)
+                .accountNo(one)
                 .balance(new Double(100))
                 .firstName("Joe")
                 .lastName("X")
                 .build();
-        Account xA = new Account(x.getFirstName(),
-                x.getMiddleName(), x.getLastName(), x.getAccountNo(), x.getBalance());
+
+         xA = getAccountFromDTO(x);
+
         AccountDTO y = AccountDTO.builder()
-                .accountNo(2)
+                .accountNo(two)
                 .balance(new Double(999))
                 .firstName("Alice")
                 .lastName("Y")
                 .build();
-        Account yA = new Account(y.getFirstName(),
-                y.getMiddleName(), y.getLastName(), y.getAccountNo(), y.getBalance());
-        DbConnection.init();
-        DbConnection.em.getTransaction().begin();
-        DbConnection.em.persist(xA);
-        DbConnection.em.persist(yA);
-        DbConnection.em.getTransaction().commit();
+
+        yA = getAccountFromDTO(y);
+
+        repository.saveAccount(xA);
+        repository.saveAccount(yA);
+    }
+
+    @Test
+    public void transferFromXToYWithValidRules(){
+        clearDB();
         TransactionDTO transaction = TransactionDTO.builder()
                 .amount(new Double(50))
-                .crFrom(1)
-                .crTo(2)
+                .crFrom(one)
+                .crTo(two)
                 .build();
 
-        TransactionUtility.performTransaction.apply(transaction, DbConnection.em);
+        TransactionUtility.performTransaction.apply(transaction, repository);
 
-        DbConnection.em.getTransaction().begin();
+        Account xN = TransactionUtility.findAccount.apply(one, repository);
+        Account yN = TransactionUtility.findAccount.apply(two, repository);
 
-        AccountDTO xN = TransactionUtility.findAccount.apply(1, DbConnection.em);
-        AccountDTO yN = TransactionUtility.findAccount.apply(2, DbConnection.em);
-        DbConnection.em.getTransaction().commit();
 
         assertEquals(xN.getBalance(), new Double(50));
         assertEquals(yN.getBalance(), new Double(1049));
-        DbConnection.em.close();
+    }
+
+    @Test
+    public void transferFromXToYWithZeroAsTransactionBalance(){
+        clearDB();
+        TransactionDTO transaction = TransactionDTO.builder()
+                .amount(new Double(0))
+                .crFrom(one)
+                .crTo(two)
+                .build();
+
+        TransactionUtility.performTransaction.apply(transaction, repository);
+
+        Account xN = TransactionUtility.findAccount.apply(one, repository);
+        Account yN = TransactionUtility.findAccount.apply(two, repository);
+
+
+        assertEquals(xN.getBalance(), new Double(100));
+        assertEquals(yN.getBalance(), new Double(999));
+    }
+
+    private Account getAccountFromDTO(AccountDTO accountDTO){
+        Account account = new Account();
+        account.setFirstName(accountDTO.getFirstName());
+        account.setMiddleName(accountDTO.getMiddleName());
+        account.setLastName(accountDTO.getLastName());
+        account.setAccountNo(accountDTO.getAccountNo());
+        account.setBalance(accountDTO.getBalance());
+        return account;
     }
 }
