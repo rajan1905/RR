@@ -11,13 +11,18 @@ public class DbConnection {
     private static final Logger LOG = Logger.getAnonymousLogger();
 
     private static EntityManagerFactory emf;
-    public static EntityManager em;
+    private static EntityManager em;
 
-    public static synchronized void init() {
+    public static synchronized EntityManager getEntityManager() {
         if (emf == null && em == null) {
-            emf = Persistence.createEntityManagerFactory("thePersistenceUnit");
-            em = emf.createEntityManager();
+            synchronized (DbConnection.class) {
+                if (emf == null && em == null) {
+                    emf = Persistence.createEntityManagerFactory("thePersistenceUnit");
+                    em = emf.createEntityManager();
+                }
+            }
         }
         else LOG.info("emf already initialized");
+        return em;
     }
 }

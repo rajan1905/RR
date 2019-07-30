@@ -6,6 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 import repository.AccountRepository;
 import repository.AccountRepositoryImpl;
+import transactions.TransactionRules;
 import transactions.TransactionUtility;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -19,8 +20,8 @@ public class TransactionTesting {
 
     @Before
     public void setup(){
-        DbConnection.init();
-        repository = new AccountRepositoryImpl(DbConnection.em);
+        repository = new AccountRepositoryImpl(DbConnection.getEntityManager());
+        TransactionRules.init(DbConnection.getEntityManager());
     }
 
 
@@ -66,6 +67,44 @@ public class TransactionTesting {
 
         assertEquals(xN.getBalance(), new Double(50));
         assertEquals(yN.getBalance(), new Double(1049));
+    }
+
+    @Test
+    public void transferFromXToYWithFromAndToAsSameAccount(){
+        clearDB();
+        TransactionDTO transaction = TransactionDTO.builder()
+                .amount(new Double(0))
+                .crFrom(one)
+                .crTo(one)
+                .build();
+
+        TransactionUtility.performTransaction.apply(transaction, repository);
+
+        Account xN = TransactionUtility.findAccount.apply(one, repository);
+        Account yN = TransactionUtility.findAccount.apply(two, repository);
+
+
+        assertEquals(xN.getBalance(), new Double(100));
+        assertEquals(yN.getBalance(), new Double(999));
+    }
+
+    @Test
+    public void transferFromXToYWithToAccountNotPresent(){
+        clearDB();
+        TransactionDTO transaction = TransactionDTO.builder()
+                .amount(new Double(0))
+                .crFrom(one)
+                .crTo(new Long(123))
+                .build();
+
+        TransactionUtility.performTransaction.apply(transaction, repository);
+
+        Account xN = TransactionUtility.findAccount.apply(one, repository);
+        Account yN = TransactionUtility.findAccount.apply(two, repository);
+
+
+        assertEquals(xN.getBalance(), new Double(100));
+        assertEquals(yN.getBalance(), new Double(999));
     }
 
     @Test

@@ -2,29 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db48f75c-3ef1-40c9-8040-30148b2ced23" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/transactions/TransactionUtility.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Revolut.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Revolut.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/repository.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/repository.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/database/DbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/database/DbConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/dao/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/dao/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/dto/AccountDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/dto/AccountDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/dto/TransactionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/dto/TransactionDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/transactions/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/transactions/TransactionRules.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/transactions/utility/TransactionUtility.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/transactions/TransactionRules.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/transactions/TransactionRules.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TransactionTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TransactionTesting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/database/DbConnectionTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/database/DbConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database/DbConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/dao/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/dao/Account.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/dto/AccountDTO$AccountDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/dto/AccountDTO$AccountDTOBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/dto/AccountDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/dto/AccountDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/dto/TransactionDTO$TransactionDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/dto/TransactionDTO$TransactionDTOBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/dto/TransactionDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/dto/TransactionDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/transactions/TransactionService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/transactions/utility/TransactionUtility.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/TransactionTesting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TransactionTesting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/database/DbConnectionTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,15 +34,6 @@
                 <element signature="imports" expanded="true" />
                 <element signature="e#1056#1102#1" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_152/src.zip!/java/util/function/BiFunction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="52" column="6" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -100,8 +77,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TransactionTesting.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
+            <state relative-caret-position="205">
+              <caret line="96" column="32" selection-start-line="96" selection-start-column="32" selection-end-line="96" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,8 +107,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/transactions/TransactionRules.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+            <state relative-caret-position="-67">
+              <caret line="35" column="96" selection-start-line="35" selection-start-column="96" selection-end-line="35" selection-end-column="96" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -142,8 +119,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/database/DbConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+            <state relative-caret-position="425">
+              <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -187,11 +164,12 @@
         <option value="$PROJECT_DIR$/src/main/java/entity/dto/AccountDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/dto/TransactionDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/transactions/utility/TransactionUtility.java" />
-        <option value="$PROJECT_DIR$/src/main/java/database/DbConnection.java" />
         <option value="$PROJECT_DIR$/src/main/java/transactions/TransactionUtility.java" />
-        <option value="$PROJECT_DIR$/src/main/java/transactions/TransactionRules.java" />
         <option value="$PROJECT_DIR$/src/main/java/repository/AccountRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/repository/AccountRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/database/DbConnection.java" />
+        <option value="$PROJECT_DIR$/src/test/java/transactions/TransactionTesting.java" />
+        <option value="$PROJECT_DIR$/src/main/java/transactions/TransactionRules.java" />
         <option value="$PROJECT_DIR$/src/test/java/TransactionTesting.java" />
       </list>
     </option>
@@ -248,35 +226,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Revolut" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Revolut" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="transactions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Revolut" type="b2602c69:ProjectViewProjectNode" />
               <item name="Revolut" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Revolut" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Revolut" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Revolut" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Revolut" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -285,14 +240,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Revolut" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Revolut" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Revolut" type="b2602c69:ProjectViewProjectNode" />
@@ -309,12 +256,15 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564522126677" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564523205562" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="transactions" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Revolut\src\main\resources\META-INF" />
     </key>
@@ -331,7 +281,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TransactionTesting">
+  <component name="RunManager" selected="JUnit.TransactionTesting (1)">
     <configuration name="DbConnectionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Revolut" />
       <extension name="coverage">
@@ -347,23 +297,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DbConnectionTest.testDbConnectionNotNullInCaseOfMultipleThreads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Revolut" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="database.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="database" />
-      <option name="MAIN_CLASS_NAME" value="database.DbConnectionTest" />
-      <option name="METHOD_NAME" value="testDbConnectionNotNullInCaseOfMultipleThreads" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TransactionTesting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TransactionTesting (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Revolut" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TransactionTesting" />
@@ -372,10 +306,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TransactionTesting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Revolut" />
+      <option name="PACKAGE_NAME" value="transactions" />
+      <option name="MAIN_CLASS_NAME" value="transactions.TransactionTesting" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TransactionTesting.transferFromXToYWithValidRules" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Revolut" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TransactionTesting" />
+      <option name="PACKAGE_NAME" value="transactions" />
+      <option name="MAIN_CLASS_NAME" value="transactions.TransactionTesting" />
       <option name="METHOD_NAME" value="transferFromXToYWithValidRules" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -384,8 +327,8 @@
     </configuration>
     <configuration name="TransactionTesting.transferFromXToYWithZeroAsTransactionBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Revolut" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TransactionTesting" />
+      <option name="PACKAGE_NAME" value="transactions" />
+      <option name="MAIN_CLASS_NAME" value="transactions.TransactionTesting" />
       <option name="METHOD_NAME" value="transferFromXToYWithZeroAsTransactionBalance" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -394,11 +337,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TransactionTesting (1)" />
         <item itemvalue="JUnit.TransactionTesting" />
         <item itemvalue="JUnit.TransactionTesting.transferFromXToYWithValidRules" />
         <item itemvalue="JUnit.TransactionTesting.transferFromXToYWithZeroAsTransactionBalance" />
         <item itemvalue="JUnit.DbConnectionTest" />
-        <item itemvalue="JUnit.DbConnectionTest.testDbConnectionNotNullInCaseOfMultipleThreads" />
       </list>
     </recent_temporary>
   </component>
@@ -416,18 +359,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TransactionTesting - 2019.07.30 at 22h 07m 06s.xml">
-      <configuration name="TransactionTesting" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TransactionTesting - 2019.07.30 at 22h 07m 58s.xml">
-      <configuration name="TransactionTesting" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TransactionTesting - 2019.07.30 at 22h 09m 31s.xml">
-      <configuration name="TransactionTesting" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TransactionTesting - 2019.07.30 at 22h 10m 58s.xml">
-      <configuration name="TransactionTesting" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TransactionTesting_transferFromXToYWithValidRules - 2019.07.30 at 22h 11m 44s.xml">
       <configuration name="TransactionTesting.transferFromXToYWithValidRules" configurationId="JUnit" />
     </history-entry>
@@ -445,6 +376,18 @@
     </history-entry>
     <history-entry file="TransactionTesting_transferFromXToYWithValidRules - 2019.07.30 at 22h 24m 45s.xml">
       <configuration name="TransactionTesting.transferFromXToYWithValidRules" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TransactionTesting_transferFromXToYWithValidRules - 2019.07.30 at 22h 28m 45s.xml">
+      <configuration name="TransactionTesting.transferFromXToYWithValidRules" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TransactionTesting - 2019.07.30 at 22h 28m 53s.xml">
+      <configuration name="TransactionTesting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TransactionTesting_(1) - 2019.07.30 at 22h 35m 50s.xml">
+      <configuration name="TransactionTesting (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TransactionTesting_(1) - 2019.07.30 at 22h 35m 59s.xml">
+      <configuration name="TransactionTesting (1)" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -469,8 +412,8 @@
       <window_info id="Favorites" order="6" sideWeight="0.17422096" side_tool="true" weight="0.26644295" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39943343" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
@@ -491,12 +434,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/TransactionTesting.java</url>
-          <line>36</line>
-          <properties />
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/transactions/TransactionUtility.java</url>
           <line>49</line>
@@ -625,16 +562,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/database/DbConnectionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -863,16 +790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/database/DbConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_152/src.zip!/java/util/function/BiFunction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
@@ -917,23 +834,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repository/AccountRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/transactions/TransactionRules.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/transactions/TransactionUtility.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -945,10 +845,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/database/DbConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/database/DbConnectionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repository/AccountRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/transactions/TransactionRules.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-67">
+          <caret line="35" column="96" selection-start-line="35" selection-start-column="96" selection-end-line="35" selection-end-column="96" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TransactionTesting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
+        <state relative-caret-position="205">
+          <caret line="96" column="32" selection-start-line="96" selection-start-column="32" selection-end-line="96" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
